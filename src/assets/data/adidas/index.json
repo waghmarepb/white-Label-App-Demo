@@ -1,0 +1,26 @@
+[
+    {
+        "productName": "Adidas Shoe1",
+        "productTag": "Shoe",
+        "productPrice": "Rs.1500",
+        "imagePath": "https://content.adidas.co.in/static/Product-CJ8111/Men_RUNNING_SHOES_LOW_CJ8111_2.jpg.thumb"
+    },
+    {
+        "productName": "Adidas Shoe2",
+        "productTag": "Shoe",
+        "productPrice": "Rs.1500",
+        "imagePath": "https://content.adidas.co.in/static/Product-CJ8111/Men_RUNNING_SHOES_LOW_CJ8111_2.jpg.thumb"
+    },
+    {
+        "productName": "Adidas Shoe3",
+        "productTag": "Shoe",
+        "productPrice": "Rs.1500",
+        "imagePath": "https://content.adidas.co.in/static/Product-CJ8111/Men_RUNNING_SHOES_LOW_CJ8111_2.jpg.thumb"
+    },
+    {
+        "productName": "Adidas Shoe4",
+        "productTag": "Shoe",
+        "productPrice": "Rs.1500",
+        "imagePath": "https://content.adidas.co.in/static/Product-CJ8111/Men_RUNNING_SHOES_LOW_CJ8111_2.jpg.thumb"
+    }
+]

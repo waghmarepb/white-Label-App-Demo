@@ -1,0 +1,20 @@
+<mat-grid-list cols="1" rowHeight="5:1" *ngIf="allData">
+    <ng-container *ngFor="let item of allData">
+        <mat-grid-tile>
+            <mat-grid-tile-header [style]="{'background-color':colorCode}">
+                <h1>{{item.productName}}</h1>-
+                {{item.productTag}}
+            </mat-grid-tile-header>
+
+            <mat-grid-tile-body>
+                <img mat-card-image [src]="sanitizeImageUrl(item.imagePath)" alt="Photo of a {{item.productName}}">
+            </mat-grid-tile-body>
+
+
+            <mat-grid-tile-footer [style]="{'background-color':colorCode}">
+                {{item.productPrice}}
+
+            </mat-grid-tile-footer>
+        </mat-grid-tile>
+    </ng-container>
+</mat-grid-list>

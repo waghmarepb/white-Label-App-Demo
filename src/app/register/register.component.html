@@ -1,0 +1,59 @@
+<div class="form-container">
+  <form [formGroup]="registerForm" (submit)="submit()" autocomplete="off">
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label> Name </mat-label>
+
+      <input matInput placeholder="Name" formControlName="name" required />
+      <mat-error *ngIf=" registerForm.controls.name.touched &&
+          registerForm.controls.name.invalid" [ngStyle]="{'color': colorCode}">
+        <span *ngIf="registerForm.controls.name.errors.required">This field is mandatory.</span>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label> DOB </mat-label>
+
+      <input matInput placeholder="Date of Birth" formControlName="dob" required />
+      <mat-error *ngIf="
+          registerForm.controls.dob.touched && registerForm.controls.dob.invalid
+        " [ngStyle]="{'color': colorCode}">
+        <span *ngIf="registerForm.controls.dob.errors.required">This field is mandatory.</span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label> Address </mat-label>
+
+      <input matInput placeholder="Address" formControlName="address" />
+      <mat-error *ngIf="
+          registerForm.controls.address.touched &&
+          registerForm.controls.address.invalid
+        " [ngStyle]="{'color': colorCode}">
+        <span *ngIf="registerForm.controls.address.errors.required">This field is mandatory.</span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label> E-mail </mat-label>
+
+      <input matInput placeholder="Email" formControlName="email" />
+      <mat-error *ngIf="
+          registerForm.controls.email.touched &&
+          registerForm.controls.email.invalid
+        " [ngStyle]="{'color': colorCode}">
+        <span *ngIf="registerForm.controls.email.errors.required">This field is mandatory.</span>
+        <span *ngIf="registerForm.controls.email.errors.email">This field is invalid.</span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label> Password </mat-label>
+      <input matInput formControlName="password" type="password" />
+      <mat-error *ngIf="
+          registerForm.controls.password.touched &&
+          registerForm.controls.password.invalid
+        " [ngStyle]="{'color': colorCode}">
+        <span *ngIf="registerForm.controls.password.errors.required">This field is mandatory.</span>
+      </mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary" [ngStyle]="{'background-color': colorCode}"
+      type="submit">Register</button>
+  </form>
+</div>

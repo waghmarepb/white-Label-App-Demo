@@ -1,0 +1,26 @@
+[
+    {
+        "productName": "Bata Shoe1",
+        "productTag": "Shoe",
+        "productPrice": "Rs.1200",
+        "imagePath": "https://images-na.ssl-images-amazon.com/images/I/31ehxix6ULL.jpg"
+    },
+    {
+        "productName": "Bata Shoe2",
+        "productTag": "Shoe",
+        "productPrice": "Rs.1200",
+        "imagePath": "https://images-na.ssl-images-amazon.com/images/I/31ehxix6ULL.jpg"
+    },
+    {
+        "productName": "Bata Shoe3",
+        "productTag": "Shoe",
+        "productPrice": "Rs.1200",
+        "imagePath": "https://images-na.ssl-images-amazon.com/images/I/31ehxix6ULL.jpg"
+    },
+    {
+        "productName": "Bata Shoe4",
+        "productTag": "Shoe",
+        "productPrice": "Rs.1200",
+        "imagePath": "https://images-na.ssl-images-amazon.com/images/I/31ehxix6ULL.jpg"
+    }
+]
